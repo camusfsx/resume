@@ -1,0 +1,42 @@
+body,div,ul,li,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ol,form,input,textarea,th,td,select{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Microsoft YaHei";
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+input,textarea{
+    outline: none;
+    box-shadow: none;
+}
+textarea{
+    resize: none;
+    overflow: auto;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.tl{
+    text-align: left;
+}
+.tc{
+    text-align: center;
+}
+.tr{
+    text-align: right;
+}

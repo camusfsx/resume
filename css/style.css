@@ -1,0 +1,45 @@
+body{
+    background: black;
+    color:#fff;
+}
+header{
+    font-weight: bold;
+    padding: 20px 16px;
+}
+header>.headerLogo{
+    float: left;
+    display: block;
+    padding: 3px 0px 4px 0px;
+    font-size: 24px;
+    font-family: 'Arial Black';
+}
+header>.headerLogo>span:nth-child(1){
+    color:#e6686a;
+}
+header>.headerLogo>span:nth-child(2){
+    color:#9a9da2;
+    margin-left:4px;
+}
+header>nav{
+    float: right;
+    display: block;
+    margin-top:7px;
+}
+header>nav>ul>li{
+    float: left;
+    margin:auto 17px;
+}
+header>nav>ul>li>a{
+    border-top:3px solid transparent;
+    border-bottom:3px solid transparent;
+    font-size: 12px;
+    color:#b7b7b7;
+    display:block;
+    padding:5px 0px;
+}
+header>nav>ul>li>a:hover{
+    border-bottom:3px solid #e6686a;
+    transition: all 400ms;
+}
+
+
