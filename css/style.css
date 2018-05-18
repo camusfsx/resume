@@ -1,22 +1,25 @@
 body{
-    background: black;
+    background:#efefef;
     color:#fff;
 }
 header{
     font-weight: bold;
     padding: 20px 16px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
 }
-header>.headerLogo{
+header>a{
     float: left;
     display: block;
     padding: 3px 0px 4px 0px;
     font-size: 24px;
     font-family: 'Arial Black';
 }
-header>.headerLogo>span:nth-child(1){
+header>a>span:nth-child(1){
     color:#e6686a;
 }
-header>.headerLogo>span:nth-child(2){
+header>a>span:nth-child(2){
     color:#9a9da2;
     margin-left:4px;
 }
@@ -41,5 +44,91 @@ header>nav>ul>li>a:hover{
     border-bottom:3px solid #e6686a;
     transition: all 400ms;
 }
-
-
+.bgImg{
+    background-image: url('../image/sandroad.png');
+    background-position: center center;
+    background-size: cover;
+    height:515px;
+}
+.bgImg>div{
+    background-color: rgba(0,0, 0,0.5);
+    height:515px;
+}
+main{
+    color: #000;
+}
+main>div:nth-child(1){
+    max-width: 940px;
+    margin:auto;
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+}
+main>div:nth-child(1)>img{
+    float: left;
+    display: block;
+}
+main>div:nth-child(1)>div{
+    float: left;
+    margin-left: 65px;
+    width:470px;
+}
+main>div:nth-child(1)>div>span{
+    color:white;
+    padding:4px 16px 5px 16px;
+    background-color: #e6686a;
+    display: inline-block;
+    position: relative;
+}
+main>div:nth-child(1)>div>span>span{
+    border: 10px solid transparent;
+    border-left-color: #e6686a;
+    border-top-width: 0px;
+    position: absolute;
+    left: 4px;
+    top: 100%;
+}
+main>div:nth-child(1)>div>h1{
+    margin-top:28px;
+}
+main>div:nth-child(1)>div>hr{
+    margin: 20px 0px;
+    border: none;
+    border-top: 1px solid #DEDEDE;
+}
+main>div:nth-child(1)>div>ul>li:nth-child(odd){
+    float: left;
+    width: 30%;
+    font-weight: bold;
+    margin:5px 0px;
+}
+main>div:nth-child(1)>div>ul>li:nth-child(even){
+    float: left;
+    width: 60%;
+    color: #999;
+    margin:5px 0px;
+}
+main>.iconlist{
+    background-color: #e6686a;
+    max-width: 940px;
+    margin: auto;
+    text-align: center;
+}
+main>.iconlist>a{
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 16px;
+}
+main>.iconlist>a:hover{
+    background-color:#CF5D5F;
+    transition: all 400ms;
+}
+main>.iconlist>a>.icon {
+    width: 30px; 
+    height: 30px;
+    vertical-align: -0.15em;
+    fill: white;
+    overflow: hidden;
+ }
+    
