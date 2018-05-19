@@ -8,18 +8,19 @@ header{
     position: fixed;
     width: 100%;
     box-sizing: border-box;
+    transition: all 400ms;
 }
-header>a{
+header>.rslogo{
     float: left;
     display: block;
     padding: 3px 0px 4px 0px;
     font-size: 24px;
     font-family: 'Arial Black';
 }
-header>a>span:nth-child(1){
-    color:#e6686a;
+header>.rslogo>span:nth-child(1){
+    color:#27a79a;
 }
-header>a>span:nth-child(2){
+header>.rslogo>span:nth-child(2){
     color:#9a9da2;
     margin-left:4px;
 }
@@ -41,7 +42,7 @@ header>nav>ul>li>a{
     padding:5px 0px;
 }
 header>nav>ul>li>a:hover{
-    border-bottom:3px solid #e6686a;
+    border-bottom:3px solid #27a79a;
     transition: all 400ms;
 }
 .bgImg{
@@ -56,79 +57,195 @@ header>nav>ul>li>a:hover{
 }
 main{
     color: #000;
+    text-align: center;
 }
-main>div:nth-child(1){
+main>.myInfo{
     max-width: 940px;
     margin:auto;
     background-color: white;
     padding: 50px;
     box-sizing: border-box;
+    margin-top:-345px;
+    box-shadow: 0px 76px 10px 0px rgba(14,14,14,0.75);
+    text-align: left;
 }
-main>div:nth-child(1)>img{
+main>.myInfo>.myImg{
     float: left;
     display: block;
 }
-main>div:nth-child(1)>div{
+main>.myInfo>.myTxt{
     float: left;
     margin-left: 65px;
     width:470px;
 }
-main>div:nth-child(1)>div>span{
+main>.myInfo>.myTxt>span{
     color:white;
     padding:4px 16px 5px 16px;
-    background-color: #e6686a;
+    background-color: #27a79a;
     display: inline-block;
     position: relative;
 }
-main>div:nth-child(1)>div>span>span{
+main>.myInfo>.myTxt>span>span{
     border: 10px solid transparent;
-    border-left-color: #e6686a;
+    border-left-color: #27a79a;
     border-top-width: 0px;
     position: absolute;
     left: 4px;
     top: 100%;
 }
-main>div:nth-child(1)>div>h1{
+main>.myInfo>.myTxt>h1{
     margin-top:28px;
 }
-main>div:nth-child(1)>div>hr{
+main>.myInfo>.myTxt>hr{
     margin: 20px 0px;
     border: none;
     border-top: 1px solid #DEDEDE;
 }
-main>div:nth-child(1)>div>ul>li:nth-child(odd){
+main>.myInfo>.myTxt>ul>li:nth-child(odd){
     float: left;
     width: 30%;
     font-weight: bold;
     margin:5px 0px;
 }
-main>div:nth-child(1)>div>ul>li:nth-child(even){
+main>.myInfo>.myTxt>ul>li:nth-child(even){
     float: left;
     width: 60%;
     color: #999;
     margin:5px 0px;
 }
-main>.iconlist{
-    background-color: #e6686a;
+main>.iconList{
+    background-color: #27a79a;
     max-width: 940px;
     margin: auto;
     text-align: center;
 }
-main>.iconlist>a{
+main>.iconList>a{
     display: inline-block;
     border-radius: 50%;
     padding: 5px;
     margin: 16px;
 }
-main>.iconlist>a:hover{
-    background-color:#CF5D5F;
+main>.iconList>a:hover{
+    background-color:#23968a;
     transition: all 400ms;
 }
-main>.iconlist>a>.icon {
+main>.iconList>a>.icon {
     width: 30px; 
     height: 30px;
     vertical-align: -0.15em;
     fill: white;
     overflow: hidden;
- }
+}
+main>.download{
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 60px;
+    color:black;
+    margin: 35px auto;
+    font-weight: bold;
+}
+main>.download:hover{
+    box-shadow: 0px 5px 10px 0px rgba(11,11,11,0.50);
+    transition: all 300ms;
+}
+main>.mySum{
+    max-width: 940px;
+    margin:0px auto;
+}
+main>.mySum>p{
+    word-break: break-all;
+}
+.mySkill{
+    color: #000;
+}
+.mySkill>h2{
+    text-align: center;
+    margin: 35px;
+}
+.mySkill>ul{
+    background-color: white;
+    max-width: 940px;
+    margin: 0px auto;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 10px 0px rgba(100,100,100,0.3);
+}
+.mySkill>ul>li{
+    float: left;
+    width: 50%;
+    margin:20px 0px;
+}
+.mySkill>ul>li>h6{
+    font-weight: 500;
+    font-size: 14px;
+}
+.mySkill>ul>li>div{
+    width: 90%;
+    height:5px;
+    background-color: #a2bdb7;
+    border-radius: 2px;
+}
+.mySkill>ul>li>div>div{
+    width: 50%;
+    height:5px;
+    background-color: #0d9c90;
+    border-radius: 2px;
+}
+.myItem{
+    color:black;
+}
+.myItem>h2{
+    text-align: center;
+    margin:35px 0px 10px 0px;
+}
+.myItem>nav>.itemType,
+.myItem>nav>.itemBarBg{
+    max-width: 300px;
+    margin:0px auto;
+}
+.myItem>nav>.itemType>li{
+    float: left;
+    margin:12px;
+}
+.myItem>nav>.itemType>li>a{
+    color:black;
+}
+.myItem>nav>.itemBarBg{
+    height: 5px;
+    background-color: white;
+    border-radius: 2px;
+}
+.myItem>nav>.itemBarBg>.itemBar{
+    height: 5px;
+    background-color: #23968a;
+    border-radius: 2px;
+    width: 90px;
+    margin-left: -5px;
+    transition: all 400ms;
+}
+.myItem>.itemImg{
+    max-width: 940px;
+    margin:0px auto;
+}
+.myItem>.itemImg>.leftImg{
+    float: left;
+    padding: 10px 0;
+
+}
+.myItem>.itemImg>.rightImg{
+    float: right;
+}
+.myItem>.itemImg>.leftImg>img{
+    display: block;
+    width:600;
+    height:620px;
+}
+.myItem>.itemImg>.rightImg>img{
+    display: block;
+    width:300px;
+    height:300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     
+}
