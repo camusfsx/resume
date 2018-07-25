@@ -1,251 +1,82 @@
-body{
-    background:#efefef;
-    color:#fff;
-}
-header{
-    font-weight: bold;
-    padding: 20px 16px;
-    position: fixed;
-    width: 100%;
-    box-sizing: border-box;
-    transition: all 400ms;
-}
-header>.rslogo{
-    float: left;
-    display: block;
-    padding: 3px 0px 4px 0px;
-    font-size: 24px;
-    font-family: 'Arial Black';
-}
-header>.rslogo>span:nth-child(1){
-    color:#27a79a;
-}
-header>.rslogo>span:nth-child(2){
-    color:#9a9da2;
-    margin-left:4px;
-}
-header>nav{
-    float: right;
-    display: block;
-    margin-top:7px;
-}
-header>nav>ul>li{
-    float: left;
-    margin:auto 17px;
-}
-header>nav>ul>li>a{
-    border-top:3px solid transparent;
-    border-bottom:3px solid transparent;
-    font-size: 12px;
-    color:#b7b7b7;
-    display:block;
-    padding:5px 0px;
-}
-header>nav>ul>li>a:hover{
-    border-bottom:3px solid #27a79a;
-    transition: all 400ms;
-}
-.bgImg{
-    background-image: url('../image/sandroad.png');
-    background-position: center center;
-    background-size: cover;
-    height:515px;
-}
-.bgImg>div{
-    background-color: rgba(0,0, 0,0.5);
-    height:515px;
-}
-main{
-    color: #000;
-    text-align: center;
-}
-main>.myInfo{
-    max-width: 940px;
-    margin:auto;
-    background-color: white;
-    padding: 50px;
-    box-sizing: border-box;
-    margin-top:-345px;
-    box-shadow: 0px 76px 10px 0px rgba(14,14,14,0.75);
-    text-align: left;
-}
-main>.myInfo>.myImg{
-    float: left;
-    display: block;
-}
-main>.myInfo>.myTxt{
-    float: left;
-    margin-left: 65px;
-    width:470px;
-}
-main>.myInfo>.myTxt>span{
-    color:white;
-    padding:4px 16px 5px 16px;
-    background-color: #27a79a;
-    display: inline-block;
-    position: relative;
-}
-main>.myInfo>.myTxt>span>span{
-    border: 10px solid transparent;
-    border-left-color: #27a79a;
-    border-top-width: 0px;
-    position: absolute;
-    left: 4px;
-    top: 100%;
-}
-main>.myInfo>.myTxt>h1{
-    margin-top:28px;
-}
-main>.myInfo>.myTxt>hr{
-    margin: 20px 0px;
-    border: none;
-    border-top: 1px solid #DEDEDE;
-}
-main>.myInfo>.myTxt>ul>li:nth-child(odd){
-    float: left;
-    width: 30%;
-    font-weight: bold;
-    margin:5px 0px;
-}
-main>.myInfo>.myTxt>ul>li:nth-child(even){
-    float: left;
-    width: 60%;
-    color: #999;
-    margin:5px 0px;
-}
-main>.iconList{
-    background-color: #27a79a;
-    max-width: 940px;
-    margin: auto;
-    text-align: center;
-}
-main>.iconList>a{
-    display: inline-block;
-    border-radius: 50%;
-    padding: 5px;
-    margin: 16px;
-}
-main>.iconList>a:hover{
-    background-color:#23968a;
-    transition: all 400ms;
-}
-main>.iconList>a>.icon {
-    width: 30px; 
-    height: 30px;
-    vertical-align: -0.15em;
-    fill: white;
-    overflow: hidden;
-}
-main>.download{
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px 60px;
-    color:black;
-    margin: 35px auto;
-    font-weight: bold;
-}
-main>.download:hover{
-    box-shadow: 0px 5px 10px 0px rgba(11,11,11,0.50);
-    transition: all 300ms;
-}
-main>.mySum{
-    max-width: 940px;
-    margin:0px auto;
-}
-main>.mySum>p{
-    word-break: break-all;
-}
-.mySkill{
-    color: #000;
-}
-.mySkill>h2{
-    text-align: center;
-    margin: 35px;
-}
-.mySkill>ul{
-    background-color: white;
-    max-width: 940px;
-    margin: 0px auto;
-    padding: 20px 40px;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 10px 0px rgba(100,100,100,0.3);
-}
-.mySkill>ul>li{
-    float: left;
-    width: 50%;
-    margin:20px 0px;
-}
-.mySkill>ul>li>h6{
-    font-weight: 500;
-    font-size: 14px;
-}
-.mySkill>ul>li>div{
-    width: 90%;
-    height:5px;
-    background-color: #a2bdb7;
-    border-radius: 2px;
-}
-.mySkill>ul>li>div>div{
-    width: 50%;
-    height:5px;
-    background-color: #0d9c90;
-    border-radius: 2px;
-}
-.myItem{
-    color:black;
-}
-.myItem>h2{
-    text-align: center;
-    margin:35px 0px 10px 0px;
-}
+body,div,ul,li,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ol,form,input,textarea,th,td,select{margin: 0px;padding: 0px;}
+body{font-family: "Microsoft YaHei";}
+ul,li{list-style: none;}
+a{text-decoration: none;color:#fff;}
+input,textarea{outline: none;box-shadow: none;}
+textarea{resize: none;overflow: auto;}
+.clearfix::after{content: "";display: block;clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+.tl{text-align: left;}
+.tc{text-align: center;}
+.tr{text-align: right;}
+.hid{display: none;}
+body{background:#efefef;color:#fff;}
+.preloading{position:relative;border:1px solid black;
+    width: 100vw;height: 100vh;}
+.preloading::before,.preloading::after{content:'';
+    display:block;background-color: #000;border-radius:50%;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);animation:preloadingGetOut 1500ms linear infinite;}
+.preloading::before{animation-delay:750ms;}
+  @keyframes preloadingGetOut{from{width:0px;height:0px;opacity:1;}
+    to{width:100px;height:100px;opacity:0;}}
+header{font-weight: bold;padding: 20px 16px;position: fixed;
+    width: 100%;box-sizing: border-box;transition: all 400ms;transition:all 500ms;}
+header>.rslogo{float: left;display: block;padding: 3px 0px 4px 0px;font-size: 24px;font-family: 'Arial Black';}
+header>.rslogo>span:nth-child(1){color:#27a79a;}
+header>.rslogo>span:nth-child(2){color:#9a9da2;
+    margin-left:4px;}
+header>nav{float: right;display: block;margin-top:5px;}
+header .listForResume>li{float: left;margin:auto 17px;position: relative;}
+header .listForResume>li>a{border-top:3px solid transparent;
+    border-bottom:3px solid transparent;font-size: 12px;color:#b7b7b7;display:block;padding:5px 0px;}
+header .listForResume a{color:#737683;text-align: right;}
+header .listForResume>li div{margin-top:2px;width:0;height:3px;background-color: #27a79a;transition: all 400ms;}
+header.sticky{background-color: #fff;padding: 10px 16px;box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);}
+header.sticky .listForResume>li>a{color: #000}
+header .listForResume li ul{position: absolute;right:0;padding: 20px;background-color: #fff;box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+color:black;display: none;white-space: nowrap;}
+header .listForResume .extend div{width:100%;}
+header .listForResume .extend ul{display: block;animation:listForUl 400ms;}
+@keyframes listForUl{from{margin-right:100%;}to{margin-right:0;}}
+.bgImg{background-image: url('../image/sandroad.png');
+    background-position: center center;background-size: cover;height:515p;}
+.bgImg>div{background-color: rgba(0,0, 0,0.5);height:515px;}
+main{color: #000;text-align: center;}
+main>.myInfo{max-width: 940px;margin:auto;background-color: white;padding: 50px;box-sizing: border-box;margin-top:-345px;box-shadow: 0px 76px 10px 0px rgba(14,14,14,0.75);text-align: left;}
+main>.myInfo>.myImg{float: left;display: block;}
+main>.myInfo>.myTxt{float: left;margin-left: 65px;width:470px;}
+main>.myInfo>.myTxt>span{color:white;padding:4px 16px 5px 16px;background-color: #27a79a;display: inline-block;position: relative;}
+main>.myInfo>.myTxt>span>span{border: 10px solid transparent;   border-left-color: #27a79a;border-top-width: 0px;position: absolute;left: 4px;top: 100%;}
+main>.myInfo>.myTxt>h1{margin-top:28px;}
+main>.myInfo>.myTxt>hr{margin: 20px 0px;border: none;border-top: 1px solid #DEDEDE;}
+main>.myInfo>.myTxt li:nth-child(odd){float: left;width: 30%;font-weight: bold;margin:5px 0px;}
+main>.myInfo>.myTxt li:nth-child(even){float: left;width: 60%;color: #999;margin:5px 0px;}
+main>.iconList{background-color: #27a79a;max-width: 940px;margin: auto;text-align: center;}
+main>.iconList>a{display: inline-block;border-radius: 50%;padding: 5px;margin: 16px;}
+main>.iconList>a:hover{background-color:#23968a;transition: all 400ms;}
+main>.iconList>a>.icon {width: 30px; height: 30px;vertical-align: -0.15em;fill: white;overflow: hidden;}
+main>.download{display: inline-block;border: 1px solid #ccc;border-radius: 5px;padding: 20px 60px;color:black;margin: 35px auto;font-weight: bold;}
+main>.download:hover{box-shadow: 0px 5px 10px 0px rgba(11,11,11,0.50);transition: all 300ms;}
+main>.mySum{max-width: 940px;margin:0 auto;padding: 20px;}
+main>.mySum>p{word-break: break-all;}
+.mySkill{color: #000;}
+.mySkill>h2{margin:32px;text-align: center; color: #3d4451; font-size: 34px; line-height: 1.2; font-weight: 600;}
+.mySkill>ul{background-color: white;max-width: 940px;margin: 0px auto;padding: 20px 40px;box-sizing: border-box;box-shadow: 0px 1px 10px 0px rgba(100,100,100,0.3);}
+.mySkill>ul>li{float: left;width: 50%;margin:20px 0px;}
+.mySkill>ul>li>h6{font-weight: 500;font-size: 14px;}
+.mySkill>ul>li>div{width: 90%;height:5px;background-color: #a2bdb7;border-radius: 2px;}
+.mySkill>ul>li>div>div{width: 50%;height:5px;background-color: #0d9c90;border-radius: 2px;}
+.myItem{color:black;margin:50px 0;}
+.myItem>h2{margin:32px;text-align: center; color: #3d4451; font-size: 34px; line-height: 1.2; font-weight: 600;}
+.myItem>nav{margin-bottom: 30px;} 
 .myItem>nav>.itemType,
-.myItem>nav>.itemBarBg{
-    max-width: 300px;
-    margin:0px auto;
-}
-.myItem>nav>.itemType>li{
-    float: left;
-    margin:12px;
-}
-.myItem>nav>.itemType>li>a{
-    color:black;
-}
-.myItem>nav>.itemBarBg{
-    height: 5px;
-    background-color: white;
-    border-radius: 2px;
-}
-.myItem>nav>.itemBarBg>.itemBar{
-    height: 5px;
-    background-color: #23968a;
-    border-radius: 2px;
-    width: 90px;
-    margin-left: -5px;
-    transition: all 400ms;
-}
-.myItem>.itemImg{
-    max-width: 940px;
-    margin:0px auto;
-}
-.myItem>.itemImg>.leftImg{
-    float: left;
-    padding: 10px 0;
-
-}
-.myItem>.itemImg>.rightImg{
-    float: right;
-}
-.myItem>.itemImg>.leftImg>img{
-    display: block;
-    width:600;
-    height:620px;
-}
-.myItem>.itemImg>.rightImg>img{
-    display: block;
-    width:300px;
-    height:300px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    
-}
+.myItem>nav>.itemBarBg{max-width: 300px;margin:0px auto;}
+.myItem>nav>.itemType>li{float: left;margin:12px;}
+.myItem>nav>.itemType>li>a{color:black;}
+.myItem>nav>.itemBarBg{height: 5px;background-color: white;border-radius: 2px;}
+.myItem>nav>.itemBarBg>.itemBar{height: 5px;background-color: #23968a;border-radius: 2px;width: 90px;margin-left: -5px;transition: all 400ms;}
+.myItem>.itemImg{max-width: 940px;margin:0px auto;}
+.myItem>.itemImg>.leftImg{float: left;padding: 10px 0;}
+.myItem>.itemImg>.rightImg{float: right;}
+.myItem>.itemImg>.leftImg>img{display: block;width:600;height:620px;}
+.myItem>.itemImg>.rightImg>img{display: block;width:300px;height:300px;margin-top: 10px;margin-bottom: 20px;}
