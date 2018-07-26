@@ -19,12 +19,13 @@ body{background:#efefef;color:#fff;}
 .preloading::before{animation-delay:750ms;}
   @keyframes preloadingGetOut{from{width:0px;height:0px;opacity:1;}
     to{width:100px;height:100px;opacity:0;}}
+[data-slider]{transform: translateY(0);transition: all 400ms}
+[data-slider].preActive{transform: translateY(150px);}
 header{font-weight: bold;padding: 20px 16px;position: fixed;
-    width: 100%;box-sizing: border-box;transition: all 400ms;transition:all 500ms;}
+    width: 100%;box-sizing: border-box;transition: all 400ms;transition:all 500ms;z-index: 50;}
 header>.rslogo{float: left;display: block;padding: 3px 0px 4px 0px;font-size: 24px;font-family: 'Arial Black';}
-header>.rslogo>span:nth-child(1){color:#27a79a;}
-header>.rslogo>span:nth-child(2){color:#9a9da2;
-    margin-left:4px;}
+header>.rslogo>:nth-child(1){color:#27a79a;}
+header>.rslogo>:nth-child(2){color:#9a9da2;margin-left:4px;}
 header>nav{float: right;display: block;margin-top:5px;}
 header .listForResume>li{float: left;margin:auto 17px;position: relative;}
 header .listForResume>li>a{border-top:3px solid transparent;
@@ -64,8 +65,9 @@ main>.mySum>p{word-break: break-all;}
 .mySkill>ul{background-color: white;max-width: 940px;margin: 0px auto;padding: 20px 40px;box-sizing: border-box;box-shadow: 0px 1px 10px 0px rgba(100,100,100,0.3);}
 .mySkill>ul>li{float: left;width: 50%;margin:20px 0px;}
 .mySkill>ul>li>h6{font-weight: 500;font-size: 14px;}
-.mySkill>ul>li>div{width: 90%;height:5px;background-color: #a2bdb7;border-radius: 2px;}
-.mySkill>ul>li>div>div{width: 50%;height:5px;background-color: #0d9c90;border-radius: 2px;}
+.mySkill>ul>li>div{width: 90%;height:5px;background-color: #cde6e0; border-radius: 2px;overflow: hidden;}
+.mySkill>ul>li>div>div{width: 50%;height:5px;background-color: #0d9c90;border-radius: 2px;transition: all 800ms;}
+.preActive.mySkill>ul>li>div>div{transform:translateX(-100%);}
 .myItem{color:black;margin:50px 0;}
 .myItem>h2{margin:32px;text-align: center; color: #3d4451; font-size: 34px; line-height: 1.2; font-weight: 600;}
 .myItem>nav{margin-bottom: 30px;} 
